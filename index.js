@@ -10,5 +10,7 @@ export const detectionState = detection => {
 }
 
 export const locationName = detection => {
-  return !!detection.location_area_name ? `${detection.asset_name}: ${detection.location_area_name}` : '(Outside Boundary)'
+  return !!detection.location_area_name ? `${detection.asset_name}: ${detection.location_area_name}` : detection.asset_name
 }
+
+export const userHasSpecialAccess = user => user.email === 'itsd';
