@@ -13,4 +13,4 @@ export const locationName = detection => {
   return !!detection.location_area_name ? `${detection.asset_name}: ${detection.location_area_name}` : detection.asset_name
 }
 
-export const userHasSpecialAccess = user => user.email === 'itsd';
+export const userHasSpecialAccess = user => user.email === 'itsd4';
